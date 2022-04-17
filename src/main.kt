@@ -1,24 +1,17 @@
 
 fun main(){
-    namesOfgirls("hussein","mellany","sofia","esther")
-
+    namesOfstudents("jane","lucy","janet","laurence")
     city()
-
-
+}
+fun namesOfstudents(a:String,b:String,c:String,d:String){
+    var namesOfstudents= arrayOf(a,b,c,d)
+    println(namesOfstudents.contentToString())
 
 }
 
-
-fun namesOfgirls(name1:String,name2:String,name3:String,name4:String){
-    var namesOfgirls= arrayOf(name1,name2,name3,name4)
-    println(namesOfgirls.contentToString())
-
-
-
-}
 
 fun city() {
-    var city= arrayOf("harare","mumbai","dodoma","jarkata")
+    var city= arrayOf("nairobi","mombasa","kisumu","london")
     city.forEach() {city->
         println(city.capitalize())
     }
